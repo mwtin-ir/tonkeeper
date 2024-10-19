@@ -1,0 +1,24 @@
+:root {
+  --backgroundPage: #10161f;
+  --backgroundContent: #1d2633;
+  --backgroundTint: #2e3847;
+  --textPrimary: #fff;
+  --textSecondary: #8994a3;
+  --textTertiary: #556170;
+  --constantWhite: #fff;
+  --constantBlack: #000;
+  --accentBlue: #45aef5;
+  --accentBlueSecond: #29a9ff;
+  --borderPrimary: #242e3b;
+  --blueGradient: linear-gradient(0deg, #1ac9ff, #0098ea);
+  --blueRadialGradient: radial-gradient(
+    circle,
+    #0098ea 0%,
+    #1ac9ff 30%,
+    rgba(26, 201, 255, 0.3) 50%,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+  --grayGradient: linear-gradient(90deg, transparent, #1d2633 50%, transparent);
+  --contentGradient: linear-gradient(90deg, #1d2633, transparent 50%, #1d2633);
+  --overlayModal: rgba(0, 0, 0, 0.64);
+}

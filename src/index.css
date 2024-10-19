@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(".//style/root.css");
+body,
+html {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: var(--backgroundPage);
+  font-weight: 400;
+  font-size: 16px;
+  /* line-height: 24px; */
+  color: var(--textPrimary);
+}
+.l11obuzf {
+  display: flex;
+  height: 1px;
+  background: var(--grayGradient);
+  padding: 0 24px;
+  width: 50%;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg {
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  background: var(--blueRadialGradient);
+  filter: blur(50px);
+  top: 0;
+  z-index: 0;
+  transform: translateY(-75%);
+}
+.signer-bg {
+  display: flex;
+  width: 1500px;
+  height: 1500px;
+  position: absolute;
+  bottom: -600px;
+  background: radial-gradient(
+    circle,
+    var(--accentBlueSecond) 0,
+    transparent 90%,
+    transparent 100%
+  );
+  border-radius: 100%;
+  z-index: 0;
+  filter: blur(50px);
+  pointer-events: none;
+  transform: translateZ(0);
+}
+.signerCard::before {
+  content: "";
+  display: flex;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: -200px;
+  top: -200px;
+  background: radial-gradient(
+    circle,
+    var(--accentBlueSecond) 0,
+    transparent 70%,
+    transparent 100%
+  );
+  border-radius: 100%;
+  filter: blur(20px);
+  opacity: 0.32;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.txt{
+  display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

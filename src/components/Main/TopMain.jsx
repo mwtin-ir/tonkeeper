@@ -64,7 +64,9 @@ function TopMain() {
 
       <h1 className="xl:text-[7rem] lg:text-[5rem] md:text-[4rem] text-[2.8rem] text-center  text-[--accentBlue] font-bold   mx-auto lg:max-w-[90%] ">
         <Typewriter
-          loop={5}
+          options={{
+            loop: true,
+          }}
           onInit={(typewriter) => {
             typewriter
               .typeString("open-source")
@@ -107,11 +109,7 @@ function TopMain() {
           secIcon={<IoIosArrowDown className="text-[1.5rem]" />}
         >
           <FaAndroid className="text-[2rem]" />
-          <div className="group-hover:bock hidden bg-[--backgroundContent]  p-[8px_15px]  ">
-         
-       
-          
-          </div>
+          <div className="group-hover:bock hidden bg-[--backgroundContent]  p-[8px_15px]  "></div>
         </Button>
         <Button text="Tonkeeper Pro" to="#">
           <RxLaptop className="text-[2rem]" />

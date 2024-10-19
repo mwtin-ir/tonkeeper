@@ -184,7 +184,7 @@ function EndMain() {
         </div>
       </div>
       <div className="flex flex-col   items-start justify-start gap-5 grid-cols-2 nnhj">
-        <div className="flex items-center gap-[25px]">
+        <div className="flex flex-col lg:flex-row items-center gap-[25px]">
           <Button
             text="Tonkeeper iOS"
             to="https://apps.apple.com/us/app/tonkeeper-ton-wallet/id1587742107"
@@ -220,7 +220,7 @@ function EndMain() {
             </div>
           </Button>
         </div>
-        <div className="flex gap-x-[25px] items-center ">
+        <div className="flex flex-col lg:flex-row gap-x-[25px] items-center ">
           <Button
             text="Tonkeeper Pro"
             to="#"
